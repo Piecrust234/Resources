@@ -1,6 +1,6 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        maxprof = 0 # set profit to initially zero
+        maxprof = 0 # set profit to be initially zero
         cheapest = prices[0] # the initial cheapest is just the first index
 
         for p in prices: 
@@ -10,3 +10,4 @@ class Solution:
                 maxprof = p - cheapest
             
         return maxprof
+    
